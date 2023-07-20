@@ -1,3 +1,7 @@
+/*
+Theme Name:
+*/
+
 @charset "utf-8";
 
 /*----------------------------------------
@@ -338,12 +342,10 @@ a {
   -webkit-tap-highlight-color: transparent;
   color: #212121;
   @media screen and (min-width: 896px) {
-    transition: 0.3s;
     backface-visibility: hidden;
     -webkit-backface-visibility: hidden;
     -webkit-font-smoothing: antialiased;
     &:hover {
-      transition: 0.3s;
       cursor: pointer;
       backface-visibility: hidden;
       -webkit-backface-visibility: hidden;
@@ -372,6 +374,7 @@ caption {
 
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 html,
@@ -385,7 +388,6 @@ body {
   font-display: swap;
 }
 body {
-  overflow-x: hidden;
   @media screen and (max-width: 896px) {
     &.sp_fix {
       position: fixed;

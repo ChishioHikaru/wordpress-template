@@ -2,10 +2,18 @@
 @use "../all" as *;
 
 .top {
-  background-color: yellow;
-  @include bkp(pc) {
-    p {
-      color: $basecolor;
+  #contents {
+    position: relative;
+    .first_view {
+      height: 266vh;
+      // @include bkp(pc) {
+      //   background: url(../../img/top/fv-bg.png) no-repeat center;
+      //   background-size: cover;
+      // }
+      // @include bkp(sp) {
+      //   background: url(../../img/top/fv-bg.png) no-repeat center;
+      //   background-size: cover;
+      // }
     }
   }
 }
