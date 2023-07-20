@@ -1,0 +1,11 @@
+@charset "utf-8";
+@use "../all" as *;
+
+.company {
+  background-color: blue;
+  @include bkp(pc) {
+    p {
+      color: $basecolor;
+    }
+  }
+}
